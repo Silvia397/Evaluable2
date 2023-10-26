@@ -1,0 +1,60 @@
+package com.midominio.evaluable2.app.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "libros")
+public class Libro {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	@Column(name = "cantidad_ejemplares")
+	private int cantidadEjemplares;
+	private String titulo;
+	private String autor;
+	private String editorial;
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public int getCantidadEjemplares() {
+		return cantidadEjemplares;
+	}
+	public void setCantidadEjemplares(int cantidadEjemplares) {
+		this.cantidadEjemplares = cantidadEjemplares;
+	}
+	public String getTitulo() {
+		return titulo;
+	}
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	public String getAutor() {
+		return autor;
+	}
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+	public String getEditorial() {
+		return editorial;
+	}
+	
+	public void setEditorial(String editorial) {
+		this.editorial = editorial;
+	}
+	public Libro() {
+		super();
+	}
+	
+	
+
+}

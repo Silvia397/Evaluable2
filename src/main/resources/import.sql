@@ -1,0 +1,22 @@
+INSERT INTO libros (cantidad_ejemplares, titulo, autor, editorial) VALUES (3, 'La noche', 'Javier Pérez', 'Planeta');
+INSERT INTO libros (cantidad_ejemplares, titulo, autor, editorial) VALUES (2, 'Viajes en pareja', 'Ana Mejías', 'Dos cuadrados');
+INSERT INTO libros (cantidad_ejemplares, titulo, autor, editorial) VALUES (1, 'El día estrellado', 'Antonio Fuentes', 'Libros de la herida');
+INSERT INTO libros (cantidad_ejemplares, titulo, autor, editorial) VALUES (3, 'El jardín', 'Kate Morton', 'Alianza');
+INSERT INTO libros (cantidad_ejemplares, titulo, autor, editorial) VALUES (2, 'La noche', 'Javier Pérez', 'Anagrama');
+INSERT INTO libros (cantidad_ejemplares, titulo, autor, editorial) VALUES (1, 'El capital', 'Joaquín Maguilla', 'Agitación');
+INSERT INTO libros (cantidad_ejemplares, titulo, autor, editorial) VALUES (1, 'El río', 'Lucas García', 'El despertar');
+INSERT INTO libros (cantidad_ejemplares, titulo, autor, editorial) VALUES (2, 'Bosques en la oscuridad', 'Javier Pérez', 'Planeta');
+INSERT INTO libros (cantidad_ejemplares, titulo, autor, editorial) VALUES (3, 'Cómo hacer que te pasen cosas buenas', 'Marian Rojas Estapé', 'Planeta');
+INSERT INTO libros (cantidad_ejemplares, titulo, autor, editorial) VALUES (3, 'La ilíada', 'Homero', 'Cátedra');
+
+INSERT INTO usuarios (nombre, edad, email, direccion) VALUES ('Antonio Méndez Méndez', 24, 'antoniomendezmendez@gmail.com', 'Calle Lebrija, 17');
+INSERT INTO usuarios (nombre, edad, email, direccion) VALUES ('Clara Rodríguez García', 36, 'clararodriguezgarcia@gmail.com', 'Calle Contadores, s/n');
+INSERT INTO usuarios (nombre, edad, email, direccion) VALUES ('Javier Fuentes Ramos', 22, 'javierfuentesramos@gmail.com', 'Avenida de la Libertad, 3');
+INSERT INTO usuarios (nombre, edad, email, direccion) VALUES ('Lucas Barbero Barbero', 47, 'lucasbarberobarbero@gmail.com', 'Calle Geranios, 27');
+INSERT INTO usuarios (nombre, edad, email, direccion) VALUES ('Daniel España López', 50, 'danielespañalopez@gmail.com', 'Calle Cervantes, 19');
+INSERT INTO usuarios (nombre, edad, email, direccion) VALUES ('Ana Fernández García', 27, 'anafernandezgarcia@gmail.com', 'Calle Muñoz Molina, 68');
+INSERT INTO usuarios (nombre, edad, email, direccion) VALUES ('Paola Rodríguez Moreno', 33, 'paolarodriguezmoreno@gmail.com', 'Calle Tejedores, 34');
+INSERT INTO usuarios (nombre, edad, email, direccion) VALUES ('Leticia Ramos Méndez', 61, 'leticiaramosmendez@gmail.com', 'Calle Gitanería, 6');
+INSERT INTO usuarios (nombre, edad, email, direccion) VALUES ('Jose Jiménez Rodríguez', 19, 'josejimenezrodriguez@gmail.com', 'Avenida Ramón Carande, 15');
+INSERT INTO usuarios (nombre, edad, email, direccion) VALUES ('Carlos Cebador Alanis', 49, 'carloscebadoralanis@gmail.com', 'Calle Canadá, 12');
+INSERT INTO usuarios (nombre, edad, email, direccion) VALUES ('Lola Cariñanos Sevilla', 57, 'lolacariñanossevilla@gmail.com', 'Calle Alameda, 47');

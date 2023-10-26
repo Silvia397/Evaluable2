@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title th:text="${titular}"></title>
+</head>
+<body>
+<h1 th:text="${titulo}"></h1>
+<p th:text="${cabecera}"></p>
+<a th:href="@{/catalogo}"> Catálogo de libros</a>
+<a th:href="@{/usuarios}">Listado de usuarios</a> 
+<br>
+<br>
+<img th:src="@{/images/biblioteca}" alt="Imagen de biblioteca"></img>
+</body>
+
+
+</html>
