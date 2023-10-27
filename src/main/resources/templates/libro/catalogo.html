@@ -54,9 +54,10 @@
 					<td th:text="${libro.id}"></td>
 					<td th:text="${libro.cantidadEjemplares}"></td>
 					<td th:text="${libro.titulo}"></td>
-					<td th:text="${libro.autor}"></td>
+					<td ><a th:text="${libro.autor}" th:href="@{'catalogo/filtrar/' + ${libro.autor}}"></a></td>
 					<td th:text="${libro.editorial}"></td>
 					<td><a th:href="@{'/catalogo/borrar/' + ${libro.id}}">Eliminar</a></td>
+					<td><a th:href="@{'/catalogo/form/' + ${libro.id}}">Editar</a></td>
 				</tr>
 			</tbody>
 

@@ -19,7 +19,7 @@ public interface LibroRepository extends CrudRepository<Libro, Long>{
 		public void deleteAllById(Iterable<? extends Long> ids) 
 		public void deleteAll(Iterable<? extends Articulo> entities) 
 		public void deleteAll() 
+		public Iterable <Libro> findByAutor (String autor)
 		*/
-			
-				
+		public Iterable <Libro> findByAutor (String autor);
 	}

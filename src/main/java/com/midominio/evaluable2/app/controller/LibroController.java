@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 //import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import com.midominio.evaluable2.app.entity.Libro;
 import com.midominio.evaluable2.app.service.LibroService;
@@ -41,6 +42,27 @@ public class LibroController {
 		model.addAttribute("cabecera", "Formulario");
 		model.addAttribute("libro", new Libro());
 			return "libro/form";
+	}
+	
+	@PostMapping("catalogo/form")
+	public String guardaFormulario (Libro libro) {
+		libroService.save(libro);
+		return "redirect:/catalogo";
+	}
+	
+	@GetMapping("catalogo/form/{id}")
+	public String muestraFormularioConDatos(@PathVariable Long id, Model model) {
+		model.addAttribute("libro", libroService.findById(id));
+		model.addAttribute("titulo", "Editar formulario");
+		model.addAttribute("cabecera", "Formulario");
+			return "libro/form";
+	}
+	
+	@GetMapping("catalogo/filtrar/{autor}")
+	public String findByAutor(@PathVariable String autor, Model model){
+		model.addAttribute("catalogo", libroService.findByAutor(autor));
+			return "libro/catalogo";
+			
 	}
 
 }

@@ -6,7 +6,7 @@
 </head>
 <body>
 	<h1 th:text="${cabecera}"></h1>
-	<form th:action="@{/catalogo/crear}" th:object="${libro}" method="post">
+	<form th:action="@{/catalogo/form}" th:object="${libro}" method="post">
 		Título
 		<input type="text" th:field="*{titulo}"/> 
 		<br/>
